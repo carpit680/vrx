@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/arpit/projects/aepl_ws/install/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/arpit/projects/aepl_ws/src/aepl_task/robot_localization/include/**",
+        "/home/arpit/projects/aepl_ws/src/aepl_task/slam_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

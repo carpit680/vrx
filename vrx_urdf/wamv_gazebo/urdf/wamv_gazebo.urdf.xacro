@@ -8,7 +8,7 @@
   <xacro:arg name="gps_enabled" default="false" />
   <xacro:arg name="imu_enabled" default="false" />
   <xacro:arg name="lidar_enabled" default="false" />
-  <xacro:arg name="ground_truth_enabled" default="false" />
+  <xacro:arg name="ground_truth_enabled" default="true" />
   <xacro:arg name="vrx_sensors_enabled" default="false" />
   <xacro:arg name="pinger_enabled" default="false" />
   <xacro:arg name="ball_shooter_enabled" default="false" />
@@ -79,6 +79,18 @@
       <suppress_child_warning>true</suppress_child_warning>
     </plugin>
   </gazebo>
+
+  <!-- <gazebo>
+    <plugin
+      filename="gz-sim-odometry-publisher-system"
+      name="gz::sim::systems::OdometryPublisher">
+      <dimensions>3</dimensions>
+      <odom_publish_frequency>10.0</odom_publish_frequency>
+      <odom_frame>map</odom_frame>
+      <odom_topic>odom</odom_topic>
+      <robot_base_frame>wamv/base_link</robot_base_frame>
+    </plugin>
+  </gazebo> -->
 
   <!-- === TF === -->
   <!-- Publish robot state information -->

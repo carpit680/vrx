@@ -63,6 +63,6 @@ wamv_pinger:
         position
 
 wamv_p3d:
-    num: 0
+    num: 1
     allowed_params:
         name
